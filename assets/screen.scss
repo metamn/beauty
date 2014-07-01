@@ -1,0 +1,72 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import url(http://fonts.googleapis.com/css?family=Lato:300|Gloria+Hallelujah|Bowlby+One+SC);
+
+
+html, body, header {
+  position: relative;
+  height: 100%;
+}
+
+html {
+  body {
+    background: #000;
+    color: #999;
+    
+    width: 95%;
+    margin: 0 2.5%;
+    
+    
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 200%;
+    
+    header {
+      h1 {
+        position: absolute;
+        left: 19.1%;
+        top: 38.2%;
+        
+        span {
+          &:nth-of-type(1), &:nth-of-type(2) {
+            font-family: 'Gloria Hallelujah', cursive;
+            font-weight: normal;
+            font-size: larger;
+          }
+          
+          &:nth-of-type(2) {
+            margin: 0 .16em;
+          }
+          
+          &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(7) {
+            position: relative;
+            color: #66493D;
+  
+            font-family: 'Bowlby One SC', cursive;
+            font-weight: normal;
+            font-size: larger;
+          }
+          
+          &:nth-of-type(3) {
+            top: -.435em;
+          }
+          
+          &:nth-of-type(4) {
+            top: .35em;
+            left: -2.5em;
+          }
+
+          &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(7), &:nth-of-type(8), &:nth-of-type(9) {
+            //position: relative;
+            //left: -3em;
+          }
+        }
+      }
+    }
+  }
+}
