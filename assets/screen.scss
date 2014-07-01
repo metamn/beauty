@@ -5,7 +5,7 @@
 
 @import "compass/reset";
 @import "compass/css3";
-@import url(http://fonts.googleapis.com/css?family=Lato:300|Gloria+Hallelujah|Bowlby+One+SC);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,900);
 
 
 html, body, header {
@@ -28,37 +28,27 @@ html {
     
     header {
       h1 {
-        position: absolute;
+        position: relative;
+        display: inline-block;
         left: 19.1%;
         top: 38.2%;
         
         span {
-          &:nth-of-type(1), &:nth-of-type(2) {
-            font-family: 'Gloria Hallelujah', cursive;
-            font-weight: normal;
-            font-size: larger;
+          &:nth-of-type(1) {
+            font-weight: 900;
           }
           
-          &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(7) {
-            position: relative;
-            color: #66493D;
-  
-            font-family: 'Bowlby One SC', cursive;
-            font-weight: normal;
-            font-size: larger;
-          }
-          
-          &:nth-of-type(3) {
-            top: -.435em;
-          }
-          
-          &:nth-of-type(4) {
-            top: .35em;
-            left: -2.5em;
-          }
-
           &:nth-of-type(7) {
-            top: .16em;
+            color: lighten(#000, 2%);
+          }
+          
+          &:last-of-type {
+            font-size: small;
+            position: relative;
+            bottom: 1.25em;
+            right: 1.25em;
+            float: right;
+            display: block;
           }
         }
       }
