@@ -5,12 +5,13 @@
 
 @import "compass/reset";
 @import "compass/css3";
-@import url(http://fonts.googleapis.com/css?family=Lato:300,900);
+@import url(http://fonts.googleapis.com/css?family=Sacramento|Princess+Sofia|Dr+Sugiyama);
 
 
 html, body, header {
   position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 html {
@@ -21,34 +22,39 @@ html {
     width: 95%;
     margin: 0 2.5%;
     
-    
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 200%;
-    
     header {
       h1 {
         position: relative;
         display: inline-block;
-        left: 19.1%;
-        top: 38.2%;
+        left: 9.54%;
+        top: 19.1%;
         
         span {
-          &:nth-of-type(1) {
+          &:nth-of-type(1), &:nth-of-type(2) {
             font-weight: 900;
+            font-size: 1000%;
+            font-family: 'Dr Sugiyama', cursive;
           }
-          
-          &:nth-of-type(7) {
-            color: lighten(#000, 2%);
+
+          &:nth-of-type(1) {
+            margin-left:.625em;
           }
-          
-          &:last-of-type {
-            font-size: small;
-            position: relative;
-            bottom: 1.25em;
-            right: 1.25em;
-            float: right;
-            display: block;
+
+          &:nth-of-type(2) {
+            letter-spacing: -10px;
+            color: #AA7777;
+          }
+
+          &:nth-of-type(3) {
+            font-family: 'Princess Sofia', cursive;
+            margin-left: .625em;
+            //color: #733F3F;
+          }
+
+          &:nth-of-type(4) {
+            font-family: 'Sacramento', cursive;
+            color: #FFB799;
+            font-size: 1000%;
           }
         }
       }
